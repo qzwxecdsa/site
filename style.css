@@ -1,0 +1,569 @@
+/* Define Color Variables */
+:root {
+    --primary-color: #0078D4;
+    /* Blue */
+    --secondary-color: #B0B8C1;
+    /* Gray */
+    --accent-color: #2ECC71;
+    /* Green */
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+    background-color: var(--white-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu a {
+    color: var(--text-color);
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Search Bar */
+.search-container {
+    margin-left: 20px;
+}
+
+.search-bar {
+    padding: 8px 12px;
+    width: 200px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.search-bar:focus {
+    width: 250px;
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Burger Menu */
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+.navbar-links.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: var(--white-color);
+    width: 250px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 70px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links.active li {
+    margin: 20px 0;
+}
+
+.navbar-links.active a {
+    font-size: 18px;
+    padding: 15px;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 30px;
+    background-color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Section Images */
+.section-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-images img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.section-images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* contact us */
+.container.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* Background color */
+}
+
+.page-inner {
+    max-width: 800px;
+    /* Maximum width */
+    width: 100%;
+    text-align: center;
+}
+
+/* Contact Form Styling */
+.contact-form-wrapper {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0078D4;
+    /* Primary Blue */
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2ECC71;
+    /* Accent Green */
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #2ECC71;
+    /* Accent Green */
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #28c466;
+    /* Darker Green on hover */
+}
+
+
+/* FOOTER */
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 40px 20px;
+    text-align: left;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+/* Footer Section */
+.footer-section {
+    flex: 1 1 calc(25% - 30px);
+    /* Adjusts for 4 columns */
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--white-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Contact Information */
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer-section a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: var(--accent-color);
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon img {
+    width: 36px;
+    height: 36px;
+    filter: invert(100%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+    filter: invert(50%) sepia(100%) hue-rotate(100deg) saturate(200%);
+}
+
+/* Newsletter Signup */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.newsletter-form input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #28c466;
+    /* Slightly darker green */
+}
+
+/* Legal Links */
+.footer-legal {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-legal p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-legal a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Mobile/Tablets */
+@media (max-width: 1024px) {
+    .search-container {
+        display: none;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .container {
+        padding: 10px 15px;
+    }
+
+    .contact-form-wrapper {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 80px;
+        box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-links.active a {
+        font-size: 18px;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-links a {
+        padding: 15px;
+    }
+
+    .section-images img {
+        max-width: 90%;
+    }
+
+    .contact-form-wrapper {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn-submit {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .newsletter-form {
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        max-width: 90%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

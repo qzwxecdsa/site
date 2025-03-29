@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Styles/album.css">
+    <link rel="stylesheet" href="./Styles/album2.css">
+    <link rel="stylesheet" href="./Styles/aboutus.css">
+    <link rel="stylesheet" href="./Styles/aboutus2.css">
+    <link rel="stylesheet" href="./Styles/testimonia.css">
+    <link rel="stylesheet" href="./Styles/products.css">
+    <link rel="stylesheet" href="./Styles/products2.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header  -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./resources/Logo.png" alt="Company Logo">
+            </div>
+
+            <!-- навигация-->
+            <div class="navbar-container">
+                <!-- Навигационные ссылки -->
+                <ul class="navbar-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="./Products.html">Продукты</a></li>
+                    <li><a href="#industries">Отрасли обслуживания</a></li>
+                    <li><a href="./ContactUs.html">Обратная связь</a></li>
+                </ul>
+
+                <!-- Поисковая строка -->
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Поиск...">
+                </div>
+
+                <!-- Меню-бургер (для мобильных устройств) -->
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- разделы для каждой ссылки -->
+    <section id="home">
+        <div class="section-content">
+            <h2>Добро пожаловать в MedEquip</h2>
+            <p>В компании MedEquip у нас более 20 лет опыта в предоставлении медицинским специалистам
+                высококачественного медицинского оборудования. Наша миссия — улучшить уход за пациентами, предлагая
+                лучшее в
+                диагностических, терапевтических и мониторинговых инструментах.</p>
+        </div>
+        <div class="album">
+            <div class="responsive-container-block bg">
+                <div class="responsive-container-block img-cont">
+                    <img class="img" src="./resources/equipment.webp">
+                    <img class="img" src="./resources/equipment2.jpg">
+                    <img class="img img-last" src="./resources/equipment4.webp">
+                </div>
+                <div class="responsive-container-block img-cont">
+                    <img class="img img-big" src="./resources/equipment3.webp">
+                    <img class="img img-big img-last" src="./resources/equipment5.jpg">
+                </div>
+                <div class="responsive-container-block img-cont">
+                    <img class="img" src="resources/equipment6.webp">
+                    <img class="img" src="resources/equipment7.webp">
+                    <img class="img" src="resources/e10.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2 style="text-align:center">Товары</h2>
+
+            <div class="grid-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./resources/equipment.webp" alt="Ультразвуковой аппарат" style="width:100%">
+                    <h1>Ультразвуковой аппарат</h1>
+                    <p class="price">120,000₽</p>
+                    <p>Современный ультразвуковой аппарат с высокой точностью изображения. Идеально подходит для клиник
+                        и
+                        больниц.</p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="./resources/equipment7.webp" alt="Аппарат ЭКГ" style="width:100%">
+                    <h1>Аппарат ЭКГ</h1>
+                    <p class="price">85,000₽</p>
+                    <p>Компактный и надежный аппарат ЭКГ для мониторинга сердечной деятельности. Подходит для мобильного
+                        использования.</p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="./resources/equipment2.jpg" alt="Аппарат ЭКГ" style="width:100%">
+                    <h1>Аппарат ЭКГ</h1>
+                    <p class="price">85,000₽</p>
+                    <p>Компактный и надежный аппарат ЭКГ для мониторинга сердечной деятельности. Подходит для мобильного
+                        использования.</p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="./resources/equipment4.webp" alt="Искусственный аппарат вентиляции легких"
+                    style="width:100%">
+                    <h1>Искусственный аппарат вентиляции легких</h1>
+                    <p class="price">250,000₽</p>
+                    <p>Аппарат ИВЛ нового поколения для интенсивной терапии. Поддерживает все необходимые режимы работы.
+                    </p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="./resources/equipment6.webp" alt="Ультразвуковой аппарат" style="width:100%">
+                    <h1>Ультразвуковой аппарат</h1>
+                    <p class="price">120,000₽</p>
+                    <p>Современный ультразвуковой аппарат с высокой точностью изображения. Идеально подходит для клиник
+                        и
+                        больниц.</p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+
+
+
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="./resources/equipment7.webp" alt="Искусственный аппарат вентиляции легких"
+                    style="width:100%">
+                    <h1>Искусственный аппарат вентиляции легких</h1>
+                    <p class="price">250,000₽</p>
+                    <p>Аппарат ИВЛ нового поколения для интенсивной терапии. Поддерживает все необходимые режимы работы.
+                    </p>
+                    <p><button>Добавить в корзину</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+                <div class="ultimateImg">
+                    <img class="mainImg" src="resources/lab.jpg">
+                    <div class="purpleBox">
+                        <p class="purpleText">
+                            Мы стремимся предоставлять инновационное медицинское оборудование, которое помогает улучшить
+                            качество ухода за пациентами и облегчить работу медицинских специалистов.
+                        </p>
+                        <img class="stars"
+                            src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
+                    </div>
+                </div>
+                <div class="allText bottomText">
+                    <p class="text-blk headingText">
+                        О нас
+                    </p>
+                    <p class="text-blk subHeadingText">
+                        Мы лидеры в поставке медицинского оборудования.
+                    </p>
+                    <p class="text-blk description">
+                        С более чем 20-летним опытом, мы предоставляем медицинским учреждениям высококачественное
+                        диагностическое, терапевтическое и мониторинговое оборудование. Мы помогаем медицинским
+                        специалистам добиваться лучших результатов в лечении пациентов.
+                    </p>
+                    <a class="explore">
+                        Узнать больше о наших услугах
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="industries">
+        <div class="section-content">
+            <h1>Отрасли, которым мы предоставляем услуги</h1>
+            <p>Мы обслуживаем широкий спектр отраслей, включая здравоохранение, исследования и образование, предоставляя
+                им
+                передовые решения в области медицинского оборудования.</p>
+        </div>
+
+        <div class="outerdiv">
+            <div class="innerdiv">
+                <!-- div1 -->
+                <div class="div1 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Даниэль Клиффорд</p>
+                            <p class="designation">Проверенный клиент</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>“ Отличный сайт с огромным выбором медицинского оборудования! 
+                            Очень удобно искать нужные позиции благодаря продуманным фильтрам и категориям. 
+                            Нашел все, что нужно, без лишних усилий.”</p>
+                    </div>
+                </div>
+                <!-- div2 -->
+                <div class="div2 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Джонатан Уолтерс</p>
+                            <p class="designation">Проверенный клиент</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>“ Впечатлен качеством представленного оборудования. 
+                            На сайте есть подробные описания, характеристики и фотографии каждой позиции, что очень помогает при выборе. 
+                            Доверяю этому поставщику.”</p>
+                    </div>
+                </div>
+                <!-- div3 -->
+                <div class="div3 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name dark">Кира Уиттл</p>
+                            <p class="designation dark">Проверенный клиент</p>
+                        </div>
+                    </div>
+                    <div class="review dark">
+                        <p>“ Заказывал несколько единиц оборудования для своей клиники. 
+                            Все прошло быстро и гладко. 
+                            Менеджеры оперативно обработали заказ, и доставка была осуществлена в оговоренные сроки. 
+                            Рекомендую!Заказывал несколько единиц оборудования для своей клиники. 
+                            Все прошло быстро и гладко. 
+                            Менеджеры оперативно обработали заказ, и доставка была осуществлена в оговоренные сроки. 
+                            Рекомендую!”</p>
+                    </div>
+                </div>
+                <!-- div4 -->
+                <div class="div4 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name dark">Жанетт Хармон</p>
+                            <p class="designation dark">Проверенный клиент</p>
+                        </div>
+                    </div>
+                    <div class="review dark">
+
+                        <p>“ Остался очень доволен обслуживанием. 
+                            Возникли вопросы при выборе оборудования, но специалисты службы поддержки быстро и профессионально помогли разобраться. 
+                            Приятно работать с такой командой.”</p>
+                    </div>
+                </div>
+                <!-- div5 -->
+                <div class="div5 eachdiv">
+                    <div class="userdetails">
+                        <div class="imgbox">
+                            <img src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                                alt="">
+                        </div>
+                        <div class="detbox">
+                            <p class="name">Патрик Абрамс</p>
+                            <p class="designation">Проверенный клиент</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <p>“ Сайт очень удобный и интуитивно понятный. 
+                            Оформление заказа заняло всего несколько минут. 
+                            Радует наличие разных вариантов оплаты, все безопасно и надежно. 
+                            Отличный сервис!”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- Быстрые ссылки -->
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#industries">Отрасли, которые мы обслуживаем</a></li>
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+            </div>
+
+            <!-- Контактная информация -->
+             <style>
+                .footer-section p a {
+                    color: rgb(255, 255, 255);
+                }
+             </style>
+            <div class="footer-section">
+                <h3>Контактная информация</h3>
+                <p>Телефон: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+                <p>Адрес: <a href="s">123 Главная улица, Город, Страна</a></p>
+            </div>
+
+            <!-- Социальные сети -->
+            <style>
+                .footer-section a {
+                    color: rgb(255, 255, 255);
+                }
+             </style>
+            <div class="footer-section">
+                <h3>Подписывайтесь на нас</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Вконтакте</a>
+                    <a href="#" class="social-icon">Одноклассники</a>
+                </div>
+            </div>
+
+            <!-- Подписка на новости -->
+            <div class="footer-section">
+                <h3>Подпишитесь на нашу рассылку</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Введите ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Юридические ссылки -->
+        <style>
+            .footer-legal p a {
+                color: rgb(255, 255, 255);
+            }
+         </style>
+        <div class="footer-legal">
+            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия и положения</a></p>
+            <p>&copy; 2024 MediEquip. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+    <!--  JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

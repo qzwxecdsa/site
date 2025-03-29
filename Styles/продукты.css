@@ -1,0 +1,96 @@
+/* Define Color Variables */
+:root {
+    --primary-color: #0078D4;
+    /* Blue */
+    --secondary-color: #B0B8C1;
+    /* Gray */
+    --accent-color: #2ECC71;
+    /* Green */
+    --text-color: #333;
+    --white-color: #fff;
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    /* Default: 3 cards per row */
+}
+
+.card {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: var(--white-color);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--secondary-color);
+}
+
+.price {
+    color: var(--accent-color);
+    /* Green for emphasis on price */
+    font-size: 24px;
+    /* Slightly larger font */
+    font-weight: bold;
+    margin: 10px 0;
+    /* Spacing around the price */
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 14px;
+    color: var(--white-color);
+    /* White text for contrast */
+    background-color: var(--primary-color);
+    /* Blue for buttons */
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    /* Rounded edges for modern design */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.card button:hover {
+    background-color: var(--accent-color);
+    /* Green on hover to indicate action */
+    opacity: 0.9;
+    /* Subtle opacity change */
+}
+
+.card h3 {
+    color: var(--text-color);
+    /* Primary text color */
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-color);
+    /* Consistent text color */
+    font-size: 16px;
+    margin: 10px 15px;
+}
+
+/* Responsive Grid */
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1 card per row on mobile */
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./resources/Logo.png" alt="Company Logo">
+            </div>
+
+            <!-- Навигационная панель -->
+            <div class="navbar-container">
+                <!-- Ссылки навигации -->
+                <ul class="navbar-links">
+                    <li><a href="./index.html">Главная</a></li>
+                    <li><a href="./index.html">О нас</a></li>
+                    <li><a href="./Products.html">Продукты</a></li>
+                    <li><a href="./index.html">Отрасли обслуживания</a></li>
+                    <li><a href="./ContactUs.html">Обратная связь</a></li>
+                </ul>
+
+                <!-- Поисковая строка -->
+                <div class="search-container">
+                    <input type="text" class="search-bar" placeholder="Поиск...">
+                </div>
+
+                <!-- Меню-бургер (для мобильных устройств) -->
+                <div class="burger-menu" id="burger-menu">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="container page-wrapper">
+        <div class="page-inner">
+            <h2 class="section-title">Контактная форма</h2>
+            <div class="contact-form-wrapper">
+                <form action="#" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш Email</label>
+                        <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Отправить сообщение</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-container">
+            <!-- Быстрые ссылки -->
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#about-us">О нас</a></li>
+                    <li><a href="#industries">Отрасли, которые мы обслуживаем</a></li>
+                    <li><a href="#">Продукты</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+            </div>
+
+            <!-- Контактная информация -->
+            <div class="footer-section">
+                <h3>Контактная информация</h3>
+                <p>Телефон: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>Email: <a href="mailto:info@company.com">info@company.com</a></p>
+                <p>Адрес: 123 Главная улица, Город, Страна</p>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="footer-section">
+                <h3>Подписывайтесь на нас</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                </div>
+            </div>
+
+            <!-- Подписка на новости -->
+            <div class="footer-section">
+                <h3>Подпишитесь на нашу рассылку</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Введите ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Юридические ссылки -->
+        <div class="footer-legal">
+            <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия и положения</a></p>
+            <p>&copy; 2024 MediEquip. Все права защищены.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
