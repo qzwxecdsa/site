@@ -467,6 +467,14 @@ footer {
         display: block;
     }
 
+    .burger-menu {
+        transition: transform 0.3s ease;
+    }
+
+    .burger-menu.active {
+        transform: rotate(90deg);
+    }
+    
     .container {
         padding: 10px 15px;
     }

@@ -90,9 +90,9 @@ a:hover {
 }
 
 .imgbox img {
-    border-radius: 50%;
-    width: 2rem;
-    border: 2px solid #cec5c5;
+    border-radius: 100%;
+    width: 8rem;
+    border: 1px solid #949494;
 }
 
 .detbox {
@@ -144,8 +144,8 @@ a:hover {
 }
 
 .review p {
-    font-size: 0.95rem;
-    color: #ffffff;
+    font-size: 1rem;
+    color: #000000;
     /* White text for body */
     font-weight: 500;
     opacity: 50%;
