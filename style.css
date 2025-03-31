@@ -23,6 +23,20 @@ body {
     background-color: #f4f4f4;
 }
 
+#industries {
+    padding-top: 200px;  /* Высота вашего заголовка */
+    margin-top: -80px;  /* Компенсирует смещение */
+  }
+
+  #home {
+    padding-top: 200px;  /* Высота вашего заголовка */
+    margin-top: -80px;  /* Компенсирует смещение */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
 /* Header Section */
 header {
     background-color: var(--white-color);
